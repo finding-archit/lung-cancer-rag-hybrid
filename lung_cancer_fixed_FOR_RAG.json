@@ -1,0 +1,657 @@
+{
+  "file_path": "Lung-Cancer-Detection-using-Supervised-Machine-Learning-Techniques.pdf",
+  "file_size_bytes": 1572829,
+  "file_size_human": "1.5 MB",
+  "page_count": 20,
+  "pdf_version": "1.5",
+  "metadata": {
+    "title": "Lung Cancer Detection using Supervised Machine Learning Techniques",
+    "author": "Rahat Idrees, Muhammad Kamran Abid, Saleem Raza, Muhammad Kashif, Muhammad Waqas, Mubashir Ali, Laiba Rehman",
+    "subject": "Application of supervised machine learning for lung cancer detection",
+    "keywords": "Lung Cancer, Supervised Learning, Random Forest, SVM, ANN, Multiple Linear Regression, Healthcare AI",
+    "creator": "Microsoft® Word 2016",
+    "producer": "Microsoft® Word 2016",
+    "creation_date": "D:20220523112936+05'00'",
+    "mod_date": "D:20220523112936+05'00'"
+  },
+  "Sections": {
+    "Abstract": {
+      "text": "In recent times, Lung cancer is the most common cause of mortality in both men and women around the world. Lung cancer is the second most well-known disease after heart disease. Although lung cancer prevention is impossible, early detection of lung cancer can effectively treat lung cancer at an early stage. The possibility of a patient's survival rate increasing if lung cancer is identified early. To detect and diagnose lung cancer in its early stages, a variety of data analysis and machine learning techniques have been applied. In this paper, we applied supervised machine learning algorithms like SVM (Support vector machine), ANN (Artificial neural networks), MLR (Multiple linear regression), and RF (random forest), to detect the early stages of lung tumors. The main purpose of this study is to examine the success of machine learning algorithms in detecting lung cancer at an early stage. When compared to all other supervised machine learning algorithms, the Random forest model produces a high result, with a 99.99% accuracy rate.",
+      "entities": {
+        "Habits": [],
+        "Treatment": [],
+        "Diagnostic Techniques": [
+          "Support Vector Machine (SVM)",
+          "Artificial Neural Network (ANN)",
+          "Multiple Linear Regression (MLR)",
+          "Random Forest (RF)",
+          "Data analysis",
+          "Machine learning"
+        ],
+        "ML Tools": [
+          "SVM (Support Vector Machine)",
+          "ANN (Artificial Neural Network)",
+          "MLR (Multiple Linear Regression)",
+          "RF (Random Forest)"
+        ],
+        "Lung Cancer Class": [
+          "Early stage detection",
+          "Tumors (benign/malignant not explicitly mentioned here)"
+        ],
+        "Image": {
+          "Description": "",
+          "Path": ""
+        }
+      },
+      "fixed_entities": [
+        {
+          "type": "Diagnostic Techniques",
+          "value": "Support Vector Machine (SVM)"
+        },
+        {
+          "type": "Diagnostic Techniques",
+          "value": "Artificial Neural Network (ANN)"
+        },
+        {
+          "type": "Diagnostic Techniques",
+          "value": "Multiple Linear Regression (MLR)"
+        },
+        {
+          "type": "Diagnostic Techniques",
+          "value": "Random Forest (RF)"
+        },
+        {
+          "type": "Diagnostic Techniques",
+          "value": "Data analysis"
+        },
+        {
+          "type": "Diagnostic Techniques",
+          "value": "Machine learning"
+        },
+        {
+          "type": "ML Tools",
+          "value": "SVM (Support Vector Machine)"
+        },
+        {
+          "type": "ML Tools",
+          "value": "ANN (Artificial Neural Network)"
+        },
+        {
+          "type": "ML Tools",
+          "value": "MLR (Multiple Linear Regression)"
+        },
+        {
+          "type": "ML Tools",
+          "value": "RF (Random Forest)"
+        },
+        {
+          "type": "Lung Cancer Class",
+          "value": "Early stage detection"
+        },
+        {
+          "type": "Lung Cancer Class",
+          "value": "Tumors (benign/malignant not explicitly mentioned here)"
+        }
+      ]
+    },
+    "Introduction": {
+      "text": "Cancer is a wide term and the most complex disease in people’s life. Cancer can cause by the development of uncontrollable cells which can be spread anywhere in the human body. General cancer symptoms are fatigue, weight loss, pain, cough, fever, lumps, etc. Cancer is also called a tumor. To save the lives of humans it is very important to detect quickly and correctly the initial stage of cancer. There are many kinds of cancer like breast, brain, lung, liver, skin cancer, etc. Lung cancer is a form of cancer which starts that the abnormal cells cluster together. Lung cancer is the main reason for death among both men and women all over the world. Worldwide after heart disease, Lung cancer is the second most frequent disease. Uncontrollable cell growth may be the reason for the death of the cancer patient. Early examination of lung tumors is critical in decreasing the risk of death from lung tumor disease. Lung cancer can spread very quickly to the brain, liver, bones, and adrenal glands, therefore, the initial diagnosis of lung cancer is very necessary. Every year, almost 1.3 million people pass away due to lung cancer around the world. In 2018, approximately 234,030 Americans will be diagnosed of which 121,480 males and 112,350 females. Due to lung cancer, approximately 121,680 deaths will occur of which 83,550 males and 70,500 females. Common ways to diagnose lung cancer include Magnetic Resonance Imaging (MRI), CT (Computed Tomography) scan, and Positron Emission Tomography (PET). Lung carcinoma is another name for lung cancer. Lung cancer has two categories: SCLC (Small Cell Lung Cancer) and NSCLC (Non-Small Cell Lung Cancer). SCLC: It’s a generally rare form of lung cancer. Around 15% of lung cancer cases have a history of small cell lung cancer. Small lung cancer spread very quickly. NSCLC: It’s a quite frequent kind of lung cancer. Around 85% of lung cancer cases have a history of non-small cell lung cancer. This type of lung cancer is more dangerous than SCLC because it spread slowly. NSCLC is further divided into three categories: NSCLC has four stages which include Stage I, Stage II, Stage III, and Stage IV. In Stage I, cancer produces 60 to 80% in a single lung and doesn’t develop in lymph nodes or distant organs. In Stage II, 30 to 50% of cancer grows in lymph nodes, rather than distant organs. In stage III, the tumor expands 10 to 15% in nodes and builds in the center of the chest. In stage IV, the Tumor spread throughout the body. Many studies have been undertaken on the causes of lung cancer, with the conclusion that smoking is the primary cause. Smoking harms the lungs. In the United States, cigarette smoking is a factor of 80 to 90% of deaths due to lung cancer. Other tobacco products such as cigars, pipes, or snuff (a powdered form of tobacco) raise the risk of lung cancer and other kinds of cancer such as mouth cancer. The use of tobacco smoking for a long time begins with lung cancer. According to the survey, smoking caused lung cancer in 90% of males and 75 to 80% of females. It is a reality that 10 to 15% of people who never smoke in their life contain lung cancer. The reason for lung cancer may be passive smoking, air pollution, asbestos, and radon gas.",
+      "entities": {
+        "Symptoms": [
+          "Fatigue",
+          "Weight loss",
+          "Pain",
+          "Cough",
+          "Fever",
+          "Lumps",
+          "Chest discomfort",
+          "Bloody cough",
+          "Shortness of breath",
+          "Wheezing",
+          "Difficulty swallowing",
+          "Dry coughs",
+          "Snoring"
+        ],
+        "Habits": [
+          "Smoking",
+          "Alcohol"
+        ],
+        "Type of Cancer": [
+          "Breast cancer",
+          "Brain cancer",
+          "Lung cancer",
+          "Liver cancer",
+          "Skin cancer",
+          "SCLC (Small Cell Lung Cancer): ~15% of cases, spreads very quickly",
+          "NSCLC (Non-Small Cell Lung Cancer): ~85% of cases, spreads more slowly",
+          "Stage I: 60–80% tumor in one lung, no lymph node or distant spread",
+          "Stage II: 30–50% in lymph nodes, no distant organ spread",
+          "Stage III: 10–15% in lymph nodes, central chest involvement",
+          "Stage IV: Spreads throughout the body"
+        ],
+        "Statistics": [
+          "~1.3 million deaths worldwide every year due to lung cancer",
+          "2018 (U.S. data): 234,030 diagnosed (121,480 males; 112,350 females)",
+          "2018 (U.S. data): 121,680 deaths (83,550 males; 70,500 females)",
+          "Smoking causes 80–90% of U.S. lung cancer deaths",
+          "Smoking responsible for 90% of male cases and 75–80% of female cases",
+          "10–15% of non-smokers can also develop lung cancer"
+        ],
+        "Common Diagnostic Techniques": [
+          "MRI (Magnetic Resonance Imaging)",
+          "CT Scan (Computed Tomography)",
+          "PET Scan (Positron Emission Tomography)"
+        ],
+        "Image": {
+          "Description": "",
+          "Path": ""
+        }
+      },
+      "fixed_entities": [
+        {
+          "type": "Symptoms",
+          "value": "Fatigue"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Weight loss"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Pain"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Cough"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Fever"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Lumps"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Chest discomfort"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Bloody cough"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Shortness of breath"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Wheezing"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Difficulty swallowing"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Dry coughs"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Snoring"
+        },
+        {
+          "type": "Habits",
+          "value": "Smoking"
+        },
+        {
+          "type": "Habits",
+          "value": "Alcohol"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "Breast cancer"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "Brain cancer"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "Lung cancer"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "Liver cancer"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "Skin cancer"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "SCLC (Small Cell Lung Cancer): ~15% of cases, spreads very quickly"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "NSCLC (Non-Small Cell Lung Cancer): ~85% of cases, spreads more slowly"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "Stage I: 60–80% tumor in one lung, no lymph node or distant spread"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "Stage II: 30–50% in lymph nodes, no distant organ spread"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "Stage III: 10–15% in lymph nodes, central chest involvement"
+        },
+        {
+          "type": "Type of Cancer",
+          "value": "Stage IV: Spreads throughout the body"
+        },
+        {
+          "type": "Statistics",
+          "value": "~1.3 million deaths worldwide every year due to lung cancer"
+        },
+        {
+          "type": "Statistics",
+          "value": "2018 (U.S. data): 234,030 diagnosed (121,480 males; 112,350 females)"
+        },
+        {
+          "type": "Statistics",
+          "value": "2018 (U.S. data): 121,680 deaths (83,550 males; 70,500 females)"
+        },
+        {
+          "type": "Statistics",
+          "value": "Smoking causes 80–90% of U.S. lung cancer deaths"
+        },
+        {
+          "type": "Statistics",
+          "value": "Smoking responsible for 90% of male cases and 75–80% of female cases"
+        },
+        {
+          "type": "Statistics",
+          "value": "10–15% of non-smokers can also develop lung cancer"
+        },
+        {
+          "type": "Common Diagnostic Techniques",
+          "value": "MRI (Magnetic Resonance Imaging)"
+        },
+        {
+          "type": "Common Diagnostic Techniques",
+          "value": "CT Scan (Computed Tomography)"
+        },
+        {
+          "type": "Common Diagnostic Techniques",
+          "value": "PET Scan (Positron Emission Tomography)"
+        }
+      ]
+    },
+    "Literature Review": {
+      "text": "Machine learning is a method of diagnosis of lung cancer which is the leading cause of death worldwide. Many machine learning applications are already used in the field of Lung cancer detection. In previous work, many researchers have used image processing methods, machine learning approaches, or hybrid techniques to diagnose lung cancer. In this paper [8] Author used the clinical images dataset for the image processing methodology. The image processing approach is divided into five different steps: 1) collect images 2) image processing and segmentation 3) extraction of features 4) classification of images 5) performance evaluation. Seven classifiers as KNN( k-nearest neighbours), SVM(support vector machine), DT(Decision tree), MNB(Multinomial naïve Bayes), SGD(Stochastic gradient descent), RF(Random forest), and MLP( Multi-layer perceptron) was used to evaluate the performance based on the following parameters: accuracy, F1 score, precision, recall and then calculated using a confusion matrix. In the end, MLP obtains higher accuracy with the value of 88.55% as compared to other classifiers. The major goal of this paper[10] is to use image transformation and machine learning methods to identify lung cancer and its phases. Many steps are involved in the image processing approach, First, 200 CT scan reports and blood samples with CT scan images were used as an input for image processing. Secondly, make a Grayscale image out of an RGB image. To convert the RGB image to a Grayscale image first we find out the average of the colour image and then replace the RGB pixel with the average. Formula of average [average = R+G+B/3]. In the third step, a median filter was used to extract the noise from a grayscale picture. In the fourth step, the grayscale picture is converted to a binary image. The grayscale image has(From 0 to 255 )pixel range and the binary image has (0, 1). When converting a grayscale picture to a binary image, the threshold value 175 is occupied. In the fifth segmentation step, decrease the irrelevant information from the image and convert the duplicate CT scan image into an informative which is easily examined in detail. In the feature extraction step, the segmented output is used as an input for the feature extraction. Feature extraction is a technique for extracting a pattern from a duplicate image using algorithms. These features, such as Area, Perimeter, and Eccentricity, are provided by feature extraction. In the last step, the Support vector machine (SVM) arranges data and manages the pattern. SVM was used for classification and regression problems and categorized positive and negative samples of lung cancer images. In this paper, the SVM classifier is used as compared to other classifiers like Decision trees, Naïve Bayes, and Random forest because SVM is less time-consuming. In this study [3], To identify the lung tumor access the dataset from Standard Digital Image Database. The dataset consists of 247 CT images, 154 images labelled with a nodule, and 93 images labelled without a nodule. The dataset was divided into two parts: training and testing. Randomly, for the training set, 70% of the dataset was employed, while for the testing set 30% of the dataset was employed. PCA(Principal component analysis), KNN( k-nearest neighbours), SVM(Support vector machine), NB(Naïve Bayes), DT(Decision tree), and ANN( Artificial Neural Network) are among the machine learning techniques used to detect lung cancer. Then compare all the classifier’s accuracy before and after preprocessing. In the end, ANN has higher accuracy of 82, 43% than other classifiers after image processing, and the Decision tree has higher accuracy of 93, 24% than other algorithms without image processing. In this paper [11], To save the lives of humans by analyzing the initial stage of lung cancer many machine learning algorithms are used. Lung cancer datasets are sourced from the UCI Machine Learning Repository and Data. World. The K-fold cross-validation method splits datasets into two parts: training and testing. Many classification methods are used to attain accuracy including Logistic Regression, Decision Tree, Naïve Bayes, and Support Vector Machine is used and then compared the accuracy of each classifier with another classifier. SVM has a higher accuracy of 99.2% than all other classifiers. In this study [7], Author mostly focused on the segmentation and classification method. An Unsharp mask filter is used to sharpen the image. In image processing, an unsharp mask is used to convert the blurred image into original images. For calculating the background and foreground color intensity level of the image many thresholding methods are used but here we use the OTSU’S thresholding. The mean of OTSU’S thresholding to estimate the following parameters ( weight, mean, variance) of background and foreground of all levels. To detect the cancer region and actual affected area we used an Adaptive Canny algorithm and this method was estimated over Otsu's global thresholding method. For the segmentation process, the k-nearest neighbour classification method is used. The KNN method has some effective applications like machine learning, pattern recognition, data mining, object recognition, etc. To calculate the classification results from Bayesian Regularization neural network is used. BRNN attains high accuracy with a value of 99.5%. The Author [5] has proposed a CAD (Computer-aided diagnosis) system using the SVM to categorise abnormal or normal images using the CT images dataset. The CAD system has four phases to detect lung cancer from CT images. These stages are preprocessing of images, extraction of features, selection of features, and categorization. In this study, a Gray level co-occurrence matrix was applied to extract image information such as colour, shape, texture, etc, and ANT Colony Optimization was employed as a feature selection method for better outcomes. To categorize the normal and abnormal photos, two machine learning classifiers, ANN and SVM, were applied. ANN achieve high accuracy of 98.40% as compared to SVM's accuracy of 93.2%. Furthermore, [12] Deep Learning Approach is employed to diagnose lung cancer at the initial stages which are very important to decrease the possibility of death. In this study, the TensorFlow library is used to diagnose lung cancer. SPIE-AAPM dataset used consists of 70 CT images. The training set is made up of 40 photographs, while the test set is made up of 30 images. 3D Convolutional Neural Network is utilized to classify the lung nodules which can be benign or cancerous. To calculate the performance of the model 30 CT images are used as a resulting in which 17 patients are malignant and 13 patients are benign. Several metrics are used to assess the performance of the classification method but in this work, a confusion matrix is employed to evaluate the achievement of binary classification. The Confusion Matrix shows 70% accuracy of 3D CNN. This work [13] has proposed the deep residual network to detect lung cancer using the CT scan images dataset that is in DICOM (digital imaging and communication in medicine) image format. First, perform the preprocessing method on the dataset. In preprocessing, to determine and split lung nodules perform many regions growing and morphological operations and then used the UNet and ResNet models for feature extraction. In segmentation, analyze the distinctive features from the CT scan images. In this work two tree-based classifiers as XGBoost and RandomForest used. In the end, compared the accuracy of the proposed models. UNet+RandoomForest individually get 74% accuracy, ResNet+XSBoost achieved 76% accuracy, and the combination of UNet+RandoomForest and ResNet+XSBoost obtain 84% accuracy. The Multi-class SVM classifier is used in the work [14] to detect and predict lung cancer. In this work, MATLAB was used for built an algorithm to detect and predict lung cancer. In each phase of classification, image enhancement and segmentation were done separately. Image enhancement is an approach for improving the quality and information of a data image. Many approaches such as image scaling, spatial transformation, and contrast enhancement have been promoted to improve images. Watershed transformed is used for segmentation to achieve a better resolution in CT images and Gray Level Co-Occurance method is used for feature extraction. For classifying cancer nodules SVM classifier is used that is used for both classification and relapse purposes. Our proposed method achieves higher accuracy. This research work [15] addressed various segmentation approaches such as Hopfield Neural Network (HNN) and Fuzzy C-Mean (FCM) clustering algorithms methods. To diagnose the early stage of lung cancer used Sputum color images. In this study, a thresholding classifier was used to handle the problem of extreme fluctuation in the grey level and the related contrast between the pictures with 98% accuracy. The results of HNN Segmentation exceed the results of FCM because FCM failed in extracting the nucleus and cytoplasm areas. [16]Developed a computer-assisted detection approach to distinguish between malignant and non-cancerous tissue in DICOM images.CNN was used for feature extraction. Many machine learning classifiers were used to classify the cancerous and normal images and compared their accuracy with each other to determine which one is best for diagnosing lung and pancreatic tumors.",
+      "entities": {},
+      "Image": {
+        "Description": "",
+        "Path": ""
+      },
+      "fixed_entities": []
+    },
+    "Methodology": {
+      "Text": "Nowadays, detecting lung cancer is a more challenging task for radiologists but an intelligent computer-aided system helps the radiologist to detect and predict lung cancer very well. Machine learning plays a very important function to detect lung cancer [14]. In literature, many image analyses and machine learning techniques are used to diagnose lung cancer. In this section, we describe our proposed model using different Supervised machine learning methods to diagnose the early stage of lung cancer. Our proposed system is divided into two sections which are as fellow:  Description of data  A detailed description of the proposed architecture 3.1 Description of data The dataset which we used in this study was obtained from the data. world (https: //data.world/cancerdatahp/lung-cancer data). The obtained dataset is in CSV format. There are 1000 instances in this dataset, as well as 25 data columns, 24 of which are predictive and one of which is a class label. 25 column is a class label that contains the high, medium, and low text data. We used the LabelEncoder of the SciKit Learn library in Python to convert the text data of class labels into numbers (0, 1, 2). In this dataset, many attributes are used as a symptom to classify lung cancer detection. Many variables are employed as a symptom in this dataset to classify lung cancer detection. The name of a property is Occupational Hazards, Dust Allergy, Chronic Lung Disease, Balanced Diet, Genetic Risk, Age, Gender, Air Pollution, Alcohol Use, Occupational Hazards, Genetic Risk, Chronic Lung Disease, Balanced Diet, Obesity is a disease that is affects both men and women. Smoking, chest discomfort, bloody cough Fatigue, passive smoking, weight loss, shortness of breath, finger clubbing Frequent colds, wheezing, difficulty swallowing, dry coughs, and snoring are all symptoms that can indicate lung cancer. In the class label, the ‘2’ value signifies the “Malignant cancer”, the ‘1’ value signifies the ‘’Benign cancer’’, and the value ‘0’ signifies the ‘’ No cancer’’.",
+      "Entities": {
+        "Symptoms": [
+          "Occupational Hazards",
+          "Dust Allergy",
+          "Chronic Lung Disease",
+          "Balanced Diet",
+          "Genetic Risk",
+          "Age",
+          "Gender",
+          "Air Pollution",
+          "Alcohol Use",
+          "Obesity",
+          "Smoking",
+          "Chest Discomfort",
+          "Bloody Cough",
+          "Fatigue",
+          "Passive Smoking",
+          "Weight Loss",
+          "Shortness of Breath",
+          "Finger Clubbing",
+          "Frequent Colds",
+          "Wheezing",
+          "Difficulty Swallowing",
+          "Dry Coughs",
+          "Snoring"
+        ],
+        "Proposed Models": [
+          "Artificial Neural Network (ANN)",
+          "Support Vector Machine (SVM)",
+          "Random Forest",
+          "Multiple Linear Regression (MLR)"
+        ]
+      },
+      "Image": {
+        "Description": "The diagram illustrates the proposed methodology for lung cancer detection using machine learning. The workflow starts with the Dataset, followed by Preprocessing, then Splitting into Training and Testing sets. Training data is passed into four models (ANN, SVM, Random Forest, and Multiple Linear Regression). Outputs from these models go into a Classification step, which categorizes cases into three labels: Malignant (2), Benign (1), and No Cancer (0). The results are used for Prediction and for generating a Comparison Result across models.",
+        "Path": "Page:11"
+      },
+      "Dataset Description": {
+        "Text": "In this study [3], To identify the lung tumor access the dataset from Standard DigitalImage Database. The dataset consists of 247 CT images, 154 images labelled with a nodule, and 93 images labelled without a nodule. The dataset was divided into two parts: training and testing. Randomly, for the training set, 70% of the dataset was employed, while for the testing set 30% of the dataset was employed.",
+        "Entities": {},
+        "Image": {
+          "Description": "",
+          "Path": ""
+        }
+      },
+      "Solution Approach": {
+        "Text": "The solution approach begins with dataset acquisition, followed by preprocessing to clean and prepare the data. The dataset is then split into training and testing sets. Multiple machine learning models including ANN, SVM, Random Forest, and Multiple Linear Regression are trained on the training data. The trained models perform classification to categorize samples into three possible labels: 0 = No Cancer, 1 = Benign, and 2 = Malignant. Predictions are generated for test samples, and a comparison of results across models is conducted to evaluate performance."
+      },
+      "fixed_entities": [
+        {
+          "type": "Symptoms",
+          "value": "Occupational Hazards"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Dust Allergy"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Chronic Lung Disease"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Balanced Diet"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Genetic Risk"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Age"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Gender"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Air Pollution"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Alcohol Use"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Obesity"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Smoking"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Chest Discomfort"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Bloody Cough"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Fatigue"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Passive Smoking"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Weight Loss"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Shortness of Breath"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Finger Clubbing"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Frequent Colds"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Wheezing"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Difficulty Swallowing"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Dry Coughs"
+        },
+        {
+          "type": "Symptoms",
+          "value": "Snoring"
+        },
+        {
+          "type": "Proposed Models",
+          "value": "Artificial Neural Network (ANN)"
+        },
+        {
+          "type": "Proposed Models",
+          "value": "Support Vector Machine (SVM)"
+        },
+        {
+          "type": "Proposed Models",
+          "value": "Random Forest"
+        },
+        {
+          "type": "Proposed Models",
+          "value": "Multiple Linear Regression (MLR)"
+        }
+      ]
+    },
+    "Tools and Technologies": {
+      "Text": "Python, SciKit Learn (LabelEncoder), and CSV dataset handling were used for preprocessing and modeling.",
+      "Entities": {
+        "Diagnostic Tools Used": [
+          "Computer-Aided Detection System",
+          "Supervised Machine Learning Models"
+        ]
+      },
+      "Image": {
+        "Description": "",
+        "Path": ""
+      },
+      "fixed_entities": [
+        {
+          "type": "Diagnostic Tools Used",
+          "value": "Computer-Aided Detection System"
+        },
+        {
+          "type": "Diagnostic Tools Used",
+          "value": "Supervised Machine Learning Models"
+        }
+      ]
+    },
+    "Algorithm and Design": {
+      "Text": "In this paper [8] Author used the clinical images dataset for the image processing methodology. The image processing approach is divided into five different steps: 1) collect images 2) image processing and segmentation 3) extraction of features 4) classification of images 5) performance evaluation. Seven classifiers as KNN( k-nearest neighbours), SVM(support vector machine), DT(Decision tree), MNB(Multinomial naïve Bayes), SGD(Stochastic gradient descent), RF(Random forest), and MLP( Multi-layer perceptron) was used to evaluate the performance based on the following parameters: accuracy, F1 score, precision, recall and then calculated using a confusion matrix. In the end, MLP obtains higher accuracy with the value of 88.55% as compared to other classifiers. The major goal of this paper[10] is to use image transformation and machine learning methods to identify lung cancer and its phases. Many steps are involved in the image processing approach, First, 200 CT scan reports and blood samples with CT scan images were used as an input for image processing. Secondly, make a Grayscale image out of an RGB image. To convert the RGB image to a Grayscale image first we find out the average of the colour image and then replace the RGB pixel with the average. Formula of average [average = R+G+B/3]. In the third step, a median filter was used to extract the noise from a grayscale picture. In the fourth step, the grayscale picture is converted to a binary image. The grayscale image has(From 0 to 255 )pixel range and the binary image has (0, 1). When converting a grayscale picture to a binary image, the threshold value 175 is occupied. In the fifth segmentation step, decrease the irrelevant information from the image and convert the duplicate CT scan image into an informative which is easily examined in detail. In the feature extraction step, the segmented output is used as an input for the feature extraction. Feature extraction is a technique for extracting a pattern from a duplicate image using algorithms. These features, such as Area, Perimeter, and Eccentricity, are provided by feature extraction. In the last step, the Support vector machine (SVM) arranges data and manages the pattern. SVM was used for classification and regression problems and categorized positive and negative samples of lung cancer images. In this paper, the SVM classifier is used as compared to other classifiers like Decision trees, Naïve Bayes, and Random forest because SVM is less time-consuming. In this study [3], To identify the lung tumor access the dataset from Standard DigitalImage Database. The dataset consists of 247 CT images, 154 images labelled with a nodule, and 93 images labelled without a nodule. The dataset was divided into two parts: training and testing. Randomly, for the training set, 70% of the dataset was employed, while for the testing set 30% of the dataset was employed. PCA(Principal component analysis), KNN( k-nearest neighbours), SVM(Support vector machine), NB(Naïve Bayes), DT(Decision tree), and ANN( Artificial Neural Network) are among the machine learning techniques used to detect lung cancer. Then compare all the classifier’s accuracy before and after preprocessing. In the end, ANN has higher accuracy of 82, 43% than other classifiers after image processing, and the Decision tree has higher accuracy of 93, 24% than other algorithms without image processing. In this paper [11], To save the lives of humans by analyzing the initial stage of lung cancer many machine learning algorithms are used. Lung cancer datasets are sourced from the UCI Machine Learning Repository and Data. World. The K-fold cross-validation method splits datasets into two parts: training and testing. Many classification methods are used to attain accuracy including Logistic Regression, Decision Tree, Naïve Bayes, and Support Vector Machine is used and then compared the accuracy of each classifier with another classifier. SVM has a higher accuracy of 99.2% than all other classifiers. In this study [7], Author mostly focused on the segmentation and classification method. An Unsharp mask filter is used to sharpen the image. In image processing, an unsharp mask is used to convert the blurred image into original images. For calculating the background and foreground color intensity level of the image many thresholding methods are used but here we use the OTSU’S thresholding. The mean of OTSU’S thresholding to estimate the following parameters ( weight, mean, variance) of background and foreground of all levels. To detect the cancer region and actual affected area we used an Adaptive Canny algorithm and this method was estimated over Otsu's global thresholding method. For the segmentation process, the k-nearest neighbour classification method is used. The KNN method has some effective applications like machine learning, pattern recognition, data mining, object recognition, etc. To calculate the classification results from Bayesian Regularization neural network is used. BRNN attains high accuracy with a value of 99.5%. The Author [5] has proposed a CAD (Computer-aided diagnosis) system using the SVM to categorise abnormal or normal images using the CT images dataset. The CAD system has four phases to detect lung cancer from CT images. These stages are preprocessing of images, extraction of features, selection of features, and categorization. In this study, a Gray level co-occurrence matrix was applied to extract image information such as colour, shape, texture, etc, and ANT Colony Optimization was employed as a feature selection method for better outcomes. To categorize the normal and abnormal photos, two machine learning classifiers, ANN and SVM, were applied. ANN achieve high accuracy of 98.40% as compared to SVM's accuracy of 93.2%. Furthermore, [12] Deep Learning Approach is employed to diagnose lung cancer at the initial stages which are very important to decrease the possibility of death. In this study, the TensorFlow library is used to diagnose lung cancer. SPIE-AAPM dataset used consists of 70 CT images. The training set is made up of 40 photographs, while the test set is made up of 30 images. 3D Convolutional Neural Network is utilized to classify the lung nodules which can be benign or cancerous. To calculate the performance of the model 30 CT images are used as a resulting in which 17 patients are malignant and 13 patients are benign. Several metrics are used to assess the performance of the classification method but in this work, a confusion matrix is employed to evaluate the achievement of binary classification. The Confusion Matrix shows 70% accuracy of 3D CNN. This work [13] has proposed the deep residual network to detect lung cancer using the CT scan images dataset that is in DICOM (digital imaging and communication in medicine) image format. First, perform the preprocessing method on the dataset. In preprocessing, to determine and split lung nodules perform many regions growing and morphological operations and then used the UNet and ResNet models for feature extraction. In segmentation, analyze the distinctive features from the CT scan images. In this work two tree-based classifiers as XGBoost and RandomForest used. In the end, compared the accuracy of the proposed models. UNet+RandoomForest individually get 74% accuracy, ResNet+XSBoost achieved 76% accuracy, and the combination of UNet+RandoomForest and ResNet+XSBoost obtain 84% accuracy. The Multi-class SVM classifier is used in the work [14] to detect and predict lung cancer. In this work, MATLAB was used for built an algorithm to detect and predict lung cancer. In each phase of classification, image enhancement and segmentation were done separately. Image enhancement is an approach for improving the quality and information of a data image. Many approaches such as image scaling, spatial transformation, and contrast enhancement have been promoted to improve images. Watershed transformed is used for segmentation to achieve a better resolution in CT images and Gray Level Co-Occurance method is used for feature extraction. For classifying cancer nodules SVM classifier is used that is used for both classification and relapse purposes. Our proposed method achieves higher accuracy. This research work [15] addressed various segmentation approaches such as Hopfield Neural Network (HNN) and Fuzzy C-Mean (FCM) clustering algorithms methods. To diagnose the early stage of lung cancer used Sputum color images. In this study, a thresholding classifier was used to handle the problem of extreme fluctuation in the grey level and the related contrast between the pictures with 98% accuracy. The results of HNN Segmentation exceed the results of FCM because FCM failed in extracting the nucleus and cytoplasm areas. [16]Developed a computer-assisted detection approach to distinguish between malignant and non-cancerous tissue in DICOM images.CNN was used for feature extraction. Many machine learning classifiers were used to classify the cancerous and normal images and compared their accuracy with each other to determine which one is best for diagnosing lung and pancreatic tumors.",
+      "entities": {},
+      "Image": {
+        "Description": "",
+        "Path": ""
+      },
+      "fixed_entities": []
+    },
+    "Architecture Diagram": {
+      "Text": "",
+      "Entities": {},
+      "Image": {
+        "Description": "",
+        "Path": ""
+      },
+      "fixed_entities": []
+    },
+    "Experimental Setup": {
+      "Text": "The dataset was preprocessed, divided into training and testing sets, and classified using different ML models into Malignant, Benign, and No Cancer categories. Results from all models were compared to identify the most accurate one.",
+      "Entities": {},
+      "Image": {
+        "Description": "",
+        "Path": ""
+      },
+      "fixed_entities": []
+    },
+    "Results": {
+      "Text": "The goals of our proposed research and compared model findings to determine which model works best. Further work divides into sections. The second section contains the literature review, the third section described the methodology of the proposed algorithms, In the fourth section, analyzed the results of the experiment, and the conclusion and future work are in the last section. Level( High, Low, Medium ) Vs age, air pollution, and alcohol use of data visualization Level( High, Low, Medium ) Vs dust allergy, occupational hazards, and genetic risk of data visualisation",
+      "Entities": {
+        "Evaluation Criteria": [
+          "Accuracy",
+          "Confusion Matrix",
+          "Classification Report"
+        ],
+        "Evaluation Matrix": [
+          "True Positive",
+          "True Negative",
+          "False Positive",
+          "False Negative"
+        ],
+        "Age": "Max-age differences observed across levels: High = 64, Low = 62, Medium = 73",
+        "Gender": "Gender distribution not explicitly detailed but may influence prediction results",
+        "Geographic Area": "Dataset is limited to a specific population; generalizability remains uncertain"
+      },
+      "Image": [
+        {
+          "Description": "Figure 2a: Bar chart showing Level (High, Low, Medium) vs Max Age.",
+          "Path": "Page:11"
+        },
+        {
+          "Description": "Figure 2b: Bar chart showing Level (High, Low, Medium) vs Age, Air Pollution, and Alcohol Use.",
+          "Path": "Page:12"
+        },
+        {
+          "Description": "Figure 2c: Bar chart showing Level (High, Low, Medium) vs Dust Allergy, Occupational Hazards, and Genetic Risk.",
+          "Path": "Page:12"
+        },
+        {
+          "Description": "Figure 2d: Bar chart showing Level (High, Low, Medium) vs Genetic Risk and Occupational Hazards.",
+          "Path": "Page:12"
+        },
+        {
+          "Description": "Figure 2e: Bar chart showing Level (High, Low, Medium) vs Chronic Lung Disease and Balanced Diet.",
+          "Path": "Page:12"
+        },
+        {
+          "Description": "Figure 2f: Bar chart showing Level (High, Low, Medium) vs Obesity and Smoking.",
+          "Path": "Page:12"
+        },
+        {
+          "Description": "Figure 2g: Bar chart showing Level (High, Low, Medium) vs Passive Smoker and Chest Pain.",
+          "Path": "Page:12"
+        },
+        {
+          "Description": "Figure 2h: Bar chart showing Level (High, Low, Medium) vs Coughing up Blood and Fatigue.",
+          "Path": "/path/to/figure2h.png"
+        }
+      ],
+      "Comparison with benchmark": {
+        "Text": "The performance of the proposed models was compared with benchmark algorithms. Random Forest achieved the highest accuracy of 99.99%, outperforming Support Vector Machine (98.91%), Multiple Linear Regression (77.54%), and Artificial Neural Network (65.75%). These results establish Random Forest as the most reliable benchmark model for this dataset.",
+        "Entities": {},
+        "Image": [
+          {
+            "Description": "Figure 3a: Prediction result of ANN model.",
+            "Path": "/path/to/ann_result.png"
+          },
+          {
+            "Description": "Figure 3b: Prediction result of Multiple Linear Regression model.",
+            "Path": "/path/to/mlr_result.png"
+          },
+          {
+            "Description": "Figure 3c: Prediction result of Random Forest model.",
+            "Path": "/path/to/rf_result.png"
+          },
+          {
+            "Description": "Figure 3d: Prediction result of Support Vector Machine model.",
+            "Path": "/path/to/svm_result.png"
+          }
+        ]
+      },
+      "Limitations and findings": {
+        "Text": "Although the Random Forest model shows exceptional accuracy, the study has limitations, including the dataset’s demographic bias, limited sample size, and absence of external validation. Findings suggest that while Random Forest is highly effective on this dataset, the generalizability of results to other populations requires further investigation. Moreover, ANN showed weaker performance, which may indicate sensitivity to data preprocessing and sample distribution.",
+        "Entities": {},
+        "Image": {
+          "Description": "",
+          "Path": ""
+        }
+      },
+      "fixed_entities": [
+        {
+          "type": "Evaluation Criteria",
+          "value": "Accuracy"
+        },
+        {
+          "type": "Evaluation Criteria",
+          "value": "Confusion Matrix"
+        },
+        {
+          "type": "Evaluation Criteria",
+          "value": "Classification Report"
+        },
+        {
+          "type": "Evaluation Matrix",
+          "value": "True Positive"
+        },
+        {
+          "type": "Evaluation Matrix",
+          "value": "True Negative"
+        },
+        {
+          "type": "Evaluation Matrix",
+          "value": "False Positive"
+        },
+        {
+          "type": "Evaluation Matrix",
+          "value": "False Negative"
+        },
+        {
+          "type": "Age",
+          "value": "Max-age differences observed across levels: High = 64, Low = 62, Medium = 73"
+        },
+        {
+          "type": "Gender",
+          "value": "Gender distribution not explicitly detailed but may influence prediction results"
+        },
+        {
+          "type": "Geographic Area",
+          "value": "Dataset is limited to a specific population; generalizability remains uncertain"
+        }
+      ]
+    },
+    "Conclusion": {
+      "Text": "In previous times, Lung cancer detection was a very difficult and time-consuming task because a doctor has done multiple tests on a patient to confirm whether the patient has lung cancer or not. Nowadays, many machine learning classifiers have become more important for diagnosing and detecting lung cancer. The main goal of this work is to find a way to detect lung cancer early. Lung nodule classification is benign, malignant, and has no cancer. The supervised machine learning methods utilized in this study are the Artificial Neural Network, Support Vector Machine, Random Forest, and Multiple Linear Regression. As seen in the performance chart, each machine learning classifier delivers different outcomes on the same lung cancer dataset. When compared to other supervised machine learning algorithms, the Random Forest model gives the best result with an accuracy of 99.99 per cent, according to the proper classification and confusion matrices. For future work, Additional preprocessing improve the accuracy rate of other supervised machine learning algorithms.",
+      "Entities": {},
+      "Image": {
+        "Description": "",
+        "Path": ""
+      },
+      "fixed_entities": []
+    },
+    "Bibliography": {
+      "Text": "1. T. Saba, “Recent advancement in cancer detection using machine learning: Systematic survey of decades, comparisons and challenges,” J. Infect. Public Health, vol. 13, no. 9, pp. 1274–1289, 2020, DOI: 10.1016/j.jiph.2020.06.033. V. A. Binson and M. Subramoniam, “Advances in Early Lung CancerDetection: A Systematic Review,” 2018 Int. Conf. Circuits Syst. Digit. Enterp. Technol. ICCSDET 2018, pp. 1–5, 2018, doi: 10.1109/ICCSDET.2018.8821188. 3. Ö. Günaydin, M. Günay, and Ö. Şengel, “Comparison of lung cancer detection algorithms,” 2019 Sci. Meet. Electr. Biomed. Eng. Comput. Sci. EBBT 2019, 2019, doi: 10.1109/EBBT.2019.8741826. M. ullah, M. Bari, A. Ahmed, and S. Naveed, “Lungs Cancer Detection Using Digital Image Processing Techniques: A Review,” Mehran Univ. Res. J. Eng. Technol., vol. 38, no. 2, pp. 351–360, 2019, doi: 10.22581/muet1982.1902.10. R. Kohad and V. Ahire, “Application of Machine Learning Techniques for the Diagnosis of Lung Cancer with ANT Colony Optimization,” Int. J. Comput. Appl., vol. 113, no. 18, pp. 34–41, 2015, doi: 10.5120/19928-2069. U. Ahmed, G. Rasool, S. Zafar, and H. F. Maqbool, “Fuzzy rule based diagnostic system to detect the lung cancer,” 2018 Int. Conf. Comput. Electron. Electr. Eng. ICE Cube 2018, pp. 1–6, 2019, doi: 10.1109/ICECUBE.2018.8610976. 7. R. Patra, “Prediction of lung cancer using machine learning classifier,” Commun. Comput. Inf. Sci., vol. 1235 CCIS, pp. 132–142, 2020, doi: 10.1007/978-981-15-6648-6_11. 8. G. A. P. Singh and P. K. Gupta, “Performance analysis of various machine learning-based approaches for detection and classification of lung cancer in humans,” Neural Comput. Appl., vol. 31, no. 10, pp. 6863–6877, 2019, doi: 10.1007/s00521-018-3518-x. 9. B. Chapaliuk, “’ Etection 6 Ystem for / Ung & Ancer,” 2018 IEEE First Int. Conf. Syst. Anal. Intell. Comput., pp. 1–4, 2018. 10. W. Rahane, H. Dalvi, Y. Magar, A. Kalane, and S. Jondhale, “Lung Cancer Detection Using Image Processing and Machine Learning HealthCare,” Proc. 2018 Int. Conf. Curr. Trends Towar. Converging Technol. ICCTCT 2018, pp. 1–5, 2018,doi: 10.1109/ICCTCT.2018.8551008. 11. P. R. Radhika, R. A. S. Nair, and G. Veena, “A Comparative Study of Lung Cancer Detection using Machine Learning Algorithms,”Proc. 2019 3rd IEEE Int. Conf. Electr. Comput. Commun. Technol. ICECCT 2019, pp. 1–4, 2019, doi: 10.1109/ICECCT.2019.8869001. 12. E. Cengil and A. Çinar, “A Deep Learning Based Approach to Lung Cancer Identification,” 2018 Int. Conf. Artif. Intell. Data Process. IDAP 2018, 2019, doi: 10.1109/IDAP.2018.8620723. 13. G. S. Rao, G. V. Kumari, and B. P. Rao, Network for Biomedical Applications, vol. 2, no. January. Springer Singapore, 2019. 14. J. Alam, S. Alam, and A. Hossan, “Multi-Stage Lung Cancer Detection and Prediction Using Multi-class SVM Classifie,” Int. Conf. Comput. Commun. Chem. Mater. Electron. Eng. IC4ME2 2018, pp. 1–4, 2018, doi: 10.1109/IC4ME2.2018.8465593. 15. F. Taher, N. Werghi, H. Al-Ahmad, and R. Sammouda, “Lung Cancer Detection by Using Artificial Neural Network and Fuzzy Clustering Methods,” Am. J. Biomed. Eng., vol. 2, no. 3, pp. 136–142, 2012, doi: 10.5923/j.ajbe.20120203.08. 16. D. Tree, “LUNG AND PANCREATIC TUMOR CHARACTERIZATION IN THE DEEP LEARNING Page No : 123,” vol. XVI, no. 123, pp. 123–127, 2020. 17. I. M. Nasser and S. S. Abu-naser, “Lung Cancer Detection Using Artificial Neural Network,” vol. 3, no. 3, pp. 17–23, 2019. 18. S. Makaju, P. W. C. Prasad, A. Alsadoon, A. K. Singh, and A. Elchouemi, “Lung Cancer Detection using CT Scan Images,” Procedia Comput. Sci., vol. 125, no. 2009, pp. 107–114, 2018, doi: 10.1016/j.procs.2017.12.016. 19. A. Asuntha, A. Brindha, S. Indirani, and A. Srinivasan, “Lung cancer detection using SVM algorithm and optimization techniques,” J. Chem. Pharm. Sci., vol. 9, no. 4, pp. 3198–3203, 2016. 20. D. Nagajyothi, R. Addagudi, T. Gunda, S. S. Logitla, and G. Arun, “Detection of lung cancer using SVM classifier,” Int. J. Emerg. Trends Eng. Res., vol. 8, no. 5, pp. 2177–2180, 2020,doi: 10.30534/ijeter/2020/113852020.View publication stats",
+      "Entities": {},
+      "Image": {
+        "Description": "",
+        "Path": ""
+      },
+      "fixed_entities": []
+    }
+  }
+}
