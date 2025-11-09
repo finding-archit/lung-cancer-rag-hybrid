@@ -1,0 +1,5 @@
+chromadb
+neo4j
+sentence-transformers
+numpy
+requests
